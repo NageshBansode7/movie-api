@@ -25,10 +25,6 @@ public class MovieService {
 				.findFirst();
 		
 	}
-	
-	public List<Movie>getAllMovies()
-	{
-		return movies;
-	}
+
 	
 }

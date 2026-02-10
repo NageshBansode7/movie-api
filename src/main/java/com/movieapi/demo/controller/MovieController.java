@@ -31,14 +31,6 @@ public class MovieController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
-    @GetMapping
-    public ResponseEntity<List<Movie>> getAllMovies() {
-        return ResponseEntity.ok(movieService.getAllMovies());
-    }
-    
-    @GetMapping("/hello")
-    public ResponseEntity<String> sayHello() {
-        return new ResponseEntity<>("Created From Backend", HttpStatus.CREATED);
-    }
+   
 }
 
